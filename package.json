@@ -1,0 +1,79 @@
+{
+  "name": "send-allow",
+  "version": "0.1.0",
+  "description": "Non-custodial JSON-RPC middleware: allowlist + optional native spend caps in front of eth_sendRawTransaction. No simulation. Complementary to L2 Send Guard.",
+  "type": "module",
+  "main": "./dist/api.js",
+  "bin": {
+    "send-allow": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "policy.example.json",
+    "policy.agent.example.json",
+    ".env.example",
+    "docs/DEMO.md",
+    "docs/fixtures/offline.expected.txt",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    "CHARTER.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yellowgram/send-allow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yellowgram/send-allow/issues"
+  },
+  "homepage": "https://www.yellowgram.dev/oss",
+  "author": {
+    "name": "yellowgram",
+    "url": "https://www.yellowgram.dev"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "demo:offline": "node scripts/demo-offline.mjs",
+    "policy:check": "tsx scripts/policy-check.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "ethereum",
+    "json-rpc",
+    "allowlist",
+    "spend-cap",
+    "middleware",
+    "agent",
+    "viem"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/api.d.ts",
+      "import": "./dist/api.js"
+    },
+    "./sdk": {
+      "types": "./dist/sdk/index.d.ts",
+      "import": "./dist/sdk/index.js"
+    }
+  },
+  "types": "./dist/api.d.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "allowContractCreation": false,
+  "allowAnyDestination": false,
+  "globalMaxNativeWei": "50000000000000000",
+  "destinations": {
+    "0x1111111111111111111111111111111111111111": {
+      "maxNativeWei": "25000000000000000"
+    },
+    "0x2222222222222222222222222222222222222222": {
+      "maxNativeWei": "10000000000000000"
+    }
+  },
+  "_comment": "POISON TEMPLATE for agent wallets. Replace placeholders. Allowlisting a router/multicall is not destination safety. Complementary to L2 Send Guard (sim-before-send) — this package does not simulate."
+}
