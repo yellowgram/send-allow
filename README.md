@@ -2,6 +2,8 @@
 
 More from yellowgram: [OSS tools](https://www.yellowgram.dev/oss).
 
+**Status:** public MIT · npm `send-allow@0.1.0` · no Polar
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **Non-custodial JSON-RPC middleware** that gates `eth_sendRawTransaction` with an address allowlist and optional native spend caps (`maxNativeWei`). Signing stays outside the proxy. **No simulation** — for sim-before-send use [L2 Send Guard](https://github.com/yellowgram/l2-safety-proxy) (`l2-send-guard`) as a complementary layer.
