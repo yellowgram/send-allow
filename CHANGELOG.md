@@ -2,9 +2,9 @@
 
 ## 0.1.0
 
-- Initial scaffold: JSON-RPC middleware for `eth_sendRawTransaction`
-- Allowlist + optional per-destination / global `maxNativeWei`
+- Finished allowlist + native spend-cap wedge for `eth_sendRawTransaction`
+- Per-destination and optional global `maxNativeWei`; machine deny codes (`DESTINATION_NOT_ALLOWLISTED`, `OVER_CAP`, `CONTRACT_CREATE_DENIED`)
 - Fail-closed on definite policy miss; fail-open only on undecodable (configurable)
 - Refuse `eth_sendTransaction` (no key custody)
-- Offline demo fixture, AgentKit/viem example stub, vitest coverage
+- Sealed offline demo proves allow, not-allowlisted deny, value-cap `OVER_CAP`, undecodable, and unsigned refuse
 - Complementary to L2 Send Guard (no simulation in this package)

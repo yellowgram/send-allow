@@ -18,7 +18,7 @@ This package is a **narrow** agent-ops tool. Keep the surface honest.
 | --- | --- |
 | **No key custody** | Refuse `eth_sendTransaction`. Signing stays in the wallet / agent / KMS. |
 | **No simulation** | This package does not simulate. For sim-before-send use **L2 Send Guard** (`l2-send-guard`) — complementary, not a substitute. |
-| **No Soft\*** | No Soft-WTP briefs, no Soft outreach, no conversion theater in copy or scripts. |
+| **No Soft\*** | No Soft\* naming, briefs, outreach, or monetization wording in copy or scripts. |
 | **No Coinbase-plugin claim** | Example stubs may mention AgentKit/viem wiring. This is **not** a Coinbase / CDP plugin and must not be marketed as one. |
 | **No mainnet SLA** | Self-host / testnet-oriented. No hosted SLA, no “mainnet ready” claim in this release. |
 
@@ -32,3 +32,7 @@ This package is a **narrow** agent-ops tool. Keep the surface honest.
 | Raw undecodable | **fail-open** (forward) | Only fail-open path; set `SEND_ALLOW_UNDECODABLE_MODE=fail_closed` to refuse |
 
 Allowlisting a router, multicall, or forwarder is **not** destination safety.
+
+## Soft* ban
+
+Forbidden: any Soft* monetization / conversion naming or copy in this package (including hyphenated or spaced Soft* WTP forms). Use Soft* only as the ban token.

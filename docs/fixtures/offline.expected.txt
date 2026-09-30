@@ -3,8 +3,9 @@ no keys · no capital · no public RPC
 
 1 allowlisted → decision=forward forwarded=true
 2 deny not-allowlisted → code=-32083 policyCode=DESTINATION_NOT_ALLOWLISTED forwarded=true
-3 undecodable fail-open → decision=fail_open policyCode=TX_UNPARSEABLE forwarded=true
-4 unsigned refuse → code=-32081
+3 deny value-cap → code=-32083 policyCode=OVER_CAP forwarded=true
+4 undecodable fail-open → decision=fail_open policyCode=TX_UNPARSEABLE forwarded=true
+5 unsigned refuse → code=-32081
 
 complementary: L2 Send Guard adds sim-before-send; Send Allow is allowlist/caps only.
 charter: no key custody · no Soft* · no Coinbase-plugin claim · no mainnet SLA
