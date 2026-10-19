@@ -102,3 +102,7 @@ Stack them if you want both fences. This README does not sell a bundle or a host
 ## License
 
 MIT — [LICENSE](./LICENSE).
+
+---
+
+Part of yellowgram open source tools: https://www.yellowgram.dev/oss
