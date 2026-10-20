@@ -6,7 +6,7 @@ export type PolicyDenyCode =
 
 /**
  * Fail mode for undecodable raw txs.
- * P0: definite policy misses always fail-closed.
+ * v0.1: definite policy misses always fail-closed.
  * Undecodable is the only documented fail-open path (default).
  */
 export type UndecodableMode = "fail_open" | "fail_closed";

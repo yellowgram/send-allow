@@ -144,7 +144,7 @@ async function main() {
 
   out("");
   out("complementary: L2 Send Guard adds sim-before-send; Send Allow is allowlist/caps only.");
-  out("charter: no key custody · no Soft* · no Coinbase-plugin claim · no mainnet SLA");
+  out("deprecated: use l2-send-guard 1.x · this package holds no keys");
 
   server.close();
   upstream.server.close();

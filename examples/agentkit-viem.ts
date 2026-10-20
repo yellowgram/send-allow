@@ -12,7 +12,6 @@
  * (Requires DEMO_PRIVATE_KEY in env for a live send — omit for dry wiring print.)
  *
  * Complementary: put L2 Send Guard in front or behind for sim-before-send.
- * Soft* outreach / conversion theater is out of charter — see CHARTER.md.
  */
 
 import { createWalletClient, http, type Hex } from "viem";

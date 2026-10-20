@@ -1,7 +1,8 @@
 #!/usr/bin/env node
+import "./deprecated.js";
 /**
  * Send Allow CLI — JSON-RPC allowlist / spend-cap gate.
- * No key custody. No simulation. See README + CHARTER.md.
+ * No key custody. No simulation. Deprecated: use l2-send-guard.
  */
 import { loadConfig } from "./config.js";
 import { listen } from "./proxy/server.js";

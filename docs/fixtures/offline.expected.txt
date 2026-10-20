@@ -8,4 +8,4 @@ no keys · no capital · no public RPC
 5 unsigned refuse → code=-32081
 
 complementary: L2 Send Guard adds sim-before-send; Send Allow is allowlist/caps only.
-charter: no key custody · no Soft* · no Coinbase-plugin claim · no mainnet SLA
+deprecated: use l2-send-guard 1.x · this package holds no keys
