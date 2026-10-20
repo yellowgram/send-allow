@@ -11,7 +11,7 @@ npm run demo:offline
 
 `demo:offline` exits non-zero if stdout drifts from [`fixtures/offline.expected.txt`](./fixtures/offline.expected.txt).
 
-What it shows (sealed allow **and** deny, including value-cap):
+What it shows (fixed fixtures: allow **and** deny, including value-cap):
 
 1. Allowlisted raw under `maxNativeWei` → forwarded (`decision=forward`)
 2. Not allowlisted → `-32083` `DESTINATION_NOT_ALLOWLISTED` (not forwarded)

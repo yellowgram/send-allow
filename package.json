@@ -40,7 +40,7 @@
     "lint": "tsc --noEmit",
     "demo:offline": "node scripts/demo-offline.mjs",
     "policy:check": "tsx scripts/policy-check.ts",
-    "prepublishOnly": "npm run build"
+    "prepack": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && npm run build"
   },
   "engines": {
     "node": ">=20"

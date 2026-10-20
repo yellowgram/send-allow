@@ -1,3 +1,5 @@
+import "../deprecated.js";
+
 /**
  * Client SDK — point wallets / agents at the Send Allow proxy.
  */

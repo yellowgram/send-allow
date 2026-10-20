@@ -14,4 +14,11 @@ describe("deprecation notice", () => {
     expect(spy.mock.calls[0]![1]).toMatchObject({ type: "DeprecationWarning" });
     spy.mockRestore();
   });
+  it("importing send-allow/sdk warns too", async () => {
+    const spy = vi.spyOn(process, "emitWarning").mockImplementation(() => {});
+    vi.resetModules();
+    await import("../src/sdk/index.js");
+    expect(spy).toHaveBeenCalledTimes(1);
+    spy.mockRestore();
+  });
 });
