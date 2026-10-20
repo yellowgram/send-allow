@@ -1,7 +1,7 @@
 {
   "name": "send-allow",
-  "version": "0.1.0",
-  "description": "Non-custodial JSON-RPC middleware: allowlist + optional native spend caps in front of eth_sendRawTransaction. No simulation. Complementary to L2 Send Guard.",
+  "version": "0.2.0",
+  "description": "Deprecated: merged into l2-send-guard 1.x. This package still works but gets no fixes. See https://github.com/yellowgram/l2-safety-proxy#migrating",
   "type": "module",
   "main": "./dist/api.js",
   "bin": {
@@ -16,7 +16,6 @@
     "docs/fixtures/offline.expected.txt",
     "SECURITY.md",
     "CHANGELOG.md",
-    "CHARTER.md",
     "LICENSE",
     "README.md"
   ],
@@ -53,7 +52,8 @@
     "spend-cap",
     "middleware",
     "agent",
-    "viem"
+    "viem",
+    "deprecated"
   ],
   "license": "MIT",
   "dependencies": {

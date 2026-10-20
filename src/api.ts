@@ -1,3 +1,4 @@
+import "./deprecated.js";
 export { loadConfig } from "./config.js";
 export { parseRawTransaction } from "./decode/raw.js";
 export { handleRequest, handlePayload } from "./proxy/handler.js";
